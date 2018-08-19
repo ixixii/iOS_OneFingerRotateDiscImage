@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="baijin.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="iLn-5s-1WS">
+                                <rect key="frame" x="97.5" y="243.5" width="180" height="180"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="0rp-im-7RN"/>
+                                    <constraint firstAttribute="height" constant="180" id="Fs0-O0-GX8"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="music_cycle.png" translatesAutoresizingMaskIntoConstraints="NO" id="4hh-k0-Ze4" userLabel="cycle">
+                                <rect key="frame" x="50" y="196" width="274" height="274"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="274" id="XUS-LS-4Gh"/>
+                                    <constraint firstAttribute="width" constant="274" id="Zre-2d-vua"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="vwhm.net" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hmN-Jv-ALV">
+                                <rect key="frame" x="262" y="449" width="82" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" red="0.89554089307785034" green="0.28707712888717651" blue="0.34132575988769531" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="4hh-k0-Ze4" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="2uc-Sk-vwy"/>
+                            <constraint firstItem="4hh-k0-Ze4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MI8-UP-Gvq"/>
+                            <constraint firstItem="hmN-Jv-ALV" firstAttribute="trailing" secondItem="4hh-k0-Ze4" secondAttribute="trailing" constant="20" id="U0b-gt-PHn"/>
+                            <constraint firstItem="iLn-5s-1WS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="gOs-02-m1X"/>
+                            <constraint firstItem="iLn-5s-1WS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="u0C-S9-pqh"/>
+                            <constraint firstItem="hmN-Jv-ALV" firstAttribute="bottom" secondItem="4hh-k0-Ze4" secondAttribute="bottom" id="vaZ-jZ-rxG"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cycleImgView" destination="4hh-k0-Ze4" id="XRp-el-RyX"/>
+                        <outlet property="postImgView" destination="iLn-5s-1WS" id="t0o-f2-YVg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-50.399999999999999" y="-143.47826086956522"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="baijin.jpg" width="450" height="450"/>
+        <image name="music_cycle.png" width="713" height="713"/>
+    </resources>
+</document>
